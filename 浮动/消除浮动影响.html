@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 消除浮动影响 方式1 -->
+<div style="background-color:pink;overflow: hidden;">
+  <div id="div1" style="width:100px;height: 100px;background-color: chartreuse;float: left;">11</div>
+  <div id="div2" style="width:200px;height: 200px;background-color: coral;float: left;">22</div>
+  <div id="div3" style="width:300px;height: 300px;background-color: yellow;float: left;">33</div>
+</div>
+<div style="width:500px;height: 500px;background-color: blueviolet;"></div>
+</body>
+</html>
+
+<!-- 方式2
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style=height:600px;"background-color:pink;">
+  <div id="div1" style="width:100px;height: 100px;background-color: chartreuse;float: left;">11</div>
+  <div id="div2" style="width:200px;height: 200px;background-color: coral;float: left;">22</div>
+  <div id="div3" style="width:300px;height: 300px;background-color: yellow;float: left;">33</div>
+</div>
+<div style="width:500px;height: 500px;background-color: blueviolet;"></div>
+</body>
+</html>
+
+ -->
+
+<!-- 方式3
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background-color:pink;">
+  <div id="div1" style="width:100px;height: 100px;background-color: chartreuse;float: left;">11</div>
+  <div id="div2" style="width:200px;height: 200px;background-color: coral;float: left;">22</div>
+  <div id="div3" style="width:300px;height: 300px;background-color: yellow;float: left;">33</div>
+</div>
+<div style="width:500px;height: 500px;background-color: blueviolet;clear="both";></div>
+</body>
+</html>
+
+ -->
