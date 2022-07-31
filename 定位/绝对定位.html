@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!-- 当给一个设置了绝对定位时，它会向上一层一层的找父级节点是否有定位，若果直到找到body也没有定位，那么就相对body进行变化
+      如果父级节点有定位（绝对定位，相对定位，绝对定位），但是我们一般会配合使用父级为相对定位，当前元素为绝对定位，这样这个元素就会相对父级元素位置变化
+      无论是上面的哪一种，都会释放原来的位置，然后其他元素会占用位置。
+
+      开发中建议使用：父级节点relative定位，子级节点使用绝对定位。
+ -->
+<style>
+  #outer{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    margin-left: 300px;
+    position: relative;/* 直接设置一个相对定位 */
+  }
+
+  #div1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+  }
+
+  #div2{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+  }
+</style>
+<body>
+<div id="outer">
+  <div id="div1">111</div>
+  <div id="div2">222</div>
+</div>
+</body>
+</html>
